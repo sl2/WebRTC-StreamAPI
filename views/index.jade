@@ -1,0 +1,17 @@
+extends layout
+
+block content
+        .rows#webrtcdemo
+            h1 WebRTC Stream API Demo
+
+            div
+                h2 Videos
+                video#camera(width='400', height='300', autoplay)
+                img#camera_image1(src='')
+                img#camera_image2(src='')
+                img#camera_image3(src='')
+                
+                canvas#camera_canvas(style='display:none;', width='400', height='300')
+                h2 Snapshots 
+                #snapshot
+
